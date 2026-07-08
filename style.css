@@ -83,7 +83,7 @@ ul li a{
     padding-top: 10px;
 }
 .hero-left h2{
-    font-weight: 'bold';
+    font-weight: bold;
     font-size: 70px;
     
 }
@@ -96,6 +96,10 @@ ul li a{
     font-size: 40px;
 }
 
+.resume-child h2{
+    text-align: center;
+     margin: 60px;
+}
 /* ---ABout Section-- */
 
 .about{
@@ -219,14 +223,44 @@ ul li a{
 
 /* ---------footer ------- */
 
-footer{
-    display: flex;
-    justify-content: space-between;
+.footer-chaild{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: space-between; */
     text-align: center;
     margin-top: 70px ;
-    gap: 20px;
+    gap: 30px;
+    
 }
-/* @media(max-width:768px){
+.parent .footer-chaild{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.footer-chaild .footer-left h2{
+    padding-bottom: 20px;
+}
+
+.footer-chaild .footer-left article{
+    padding-bottom: 20px;
+}
+.footer-chaild .footer-right h2{
+    padding-bottom: 20px;
+}
+form input{
+    background-color: #ffffff;
+    border-radius: none;
+    border: none;
+    display: block;
+    padding: 8px 17px;
+    width: 100%;
+}
+form textarea{
+    display: block;
+    padding: 8px 17px;
+    width: 100%;
+}
+
+@media(max-width:768px){
 
     .resume-p,
     .what-i-do-card,
@@ -236,4 +270,4 @@ footer{
         flex-direction:column;
     }
 
-} */
+}
